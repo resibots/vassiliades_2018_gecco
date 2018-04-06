@@ -1,0 +1,10 @@
+{
+ "exps" : ["arm_variationisolinedd", "arm_variationlinedd", "arm_variationline", "arm_variationiso", "arm_variationisodd", "arm_variationisosa", "arm_variationgc", "arm_variationsbx"],
+ "bin_dir" : "/nfs/hal01/vvassili/ResiBots/vassiliades_2018_gecco/code/sferes2/build/exp/gecco2018exp/src/experiments/",
+ "res_dir" : "/nfs/hal01/vvassili/ResiBots/results/vassiliades_2018_gecco/",
+ "args" : "/nfs/hal01/vvassili/ResiBots/vassiliades_2018_gecco/code/gecco2018exp/centroids/centroids_10000_2_normalized_-1.0_1.0.dat",
+ "email" : "vassilis.vassiliades@inria.fr",
+ "wall_time" : "01:00:00",
+ "nb_runs" : 30,
+ "nb_cores" : 24
+}

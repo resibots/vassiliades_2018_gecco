@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+import sferes
+
+def build(bld):
+    libs = 'BOOST EIGEN TBB'
+    includes = ". ../../src ../ ../../ ../../../"
+    variants = [
+                'VARIATIONISOLINEDD',
+                'VARIATIONLINEDD',
+                'VARIATIONLINE',
+                'VARIATIONISO',
+                'VARIATIONISODD',
+                'VARIATIONISOSA',
+                'VARIATIONGC',
+                'VARIATIONSBX'
+                ]
+
+    sferes.create_variants(bld,
+                           source = 'experiments/schwefel.cpp',
+                           use = 'sferes2',
+                           uselib = libs,
+                           includes = includes,
+                           target = 'experiments/schwefel',
+                           variants = variants)
+
+    sferes.create_variants(bld,
+                           source = 'experiments/arm.cpp',
+                           use = 'sferes2',
+                           uselib = libs,
+                           includes = includes,
+                           target = 'experiments/arm',
+                           variants = variants)
+
+    sferes.create_variants(bld,
+                           source = 'experiments/hexa.cpp',
+                           use = 'sferes2',
+                           uselib = 'HEXAPOD_DART HEXAPOD_CONTROLLER DART ' + libs,
+                           includes = includes,
+                           target = 'experiments/hexa',
+                           variants = variants)

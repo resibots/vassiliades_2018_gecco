@@ -1,0 +1,12 @@
+[submodule "code/sferes2"]
+	path = code/sferes2
+	url = git@github.com:sferes2/sferes2.git
+[submodule "code/hexapod_simu"]
+	path = code/hexapod_simu
+	url = git@github.com:resibots/hexapod_simu.git
+[submodule "code/hexapod_common"]
+	path = code/hexapod_common
+	url = git@github.com:resibots/hexapod_common.git
+[submodule "code/dart"]
+	path = code/dart
+	url = git@github.com:resibots/dart.git
